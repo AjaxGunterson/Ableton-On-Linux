@@ -3,7 +3,7 @@ desktop=$(xdg-user-dir DESKTOP)
 echo "Preparing the folder..."
 mkdir ~/wol/Ableton_Live_11_Suite
 echo "Installing all dependencies for Ableton Live 11 Suite and preparing all enviroments, Please wait..."
-WINEARCH=win64 WINEPREFIX=~/wol/Ableton_Live_11_Suite winetricks d3dx9 dotnet35 dotnet452 dxvk gdiplusvcrun2019 corefonts tahoma vcrun6sp6
+WINEARCH=win64 WINEPREFIX=~/wol/Ableton_Live_11_Suite winetricks d3dx9 dotnet35 dotnet452 dxvk gdiplus vcrun2019 corefonts tahoma vcrun6sp6
 WINEARCH=win64 WINEPREFIX=~/wol/Ableton_Live_11_Suite winetricks win10
 echo "Creating shortcut on your desktop, please don't open it until the installer finish its work"
 cp ~/wol/Downloads/"Ableton Live Suite 11"/startup.sh ~/wol/Ableton_Live_11_Suite
